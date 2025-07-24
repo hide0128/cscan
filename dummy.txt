@@ -1,9 +1,0 @@
-// test-secrets.js
-const config = {
-  github: "github_pat_11AAAAAA0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-  aws: {
-    accessKey: "AKIAIOSFODNN7EXAMPLE",
-    secretKey: "wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY"
-  },
-  stripe: "sk_live_4eC39HqLyjWDarjtT1zdp7dc"
-};

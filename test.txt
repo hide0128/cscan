@@ -1,0 +1,374 @@
+/**
+ * =======================================================
+ * PUSH PROTECTION TEST FILE - DO NOT USE IN PRODUCTION
+ * =======================================================
+ * 
+ * This file contains various dummy API keys and secrets
+ * for testing GitHub's Push Protection functionality.
+ * 
+ * ALL CREDENTIALS IN THIS FILE ARE FAKE AND FOR TESTING ONLY
+ * 
+ * Test Scenarios:
+ * - Various cloud provider credentials
+ * - Database connection strings
+ * - API keys from popular services
+ * - Private keys and certificates
+ * - Authentication tokens
+ * 
+ * Author: Security Test Team
+ * Date: 2025-07-24
+ * Purpose: Validate Push Protection detection capabilities
+ * =======================================================
+ */
+
+// =======================================================
+// SECTION 1: CLOUD PROVIDER CREDENTIALS
+// =======================================================
+
+// AWS Credentials (should be detected as a pair)
+const awsConfig = {
+  accessKeyId: "AKIAIOSFODNN7EXAMPLE",
+  secretAccessKey: "wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY",
+  region: "us-east-1",
+  sessionToken: "AQoEXAMPLEH4aoAH0gNCAPyJxz4BlCFFxWNE1OPTgk5TthT+FvwqnKwRcOIfrRh3c/LTo6UDdyJwOOvEVPvLVMSLnW4mjLF9zDzYS0Jzox9RxmdKz3cj2YT6T5VqEqJ+DRFCRRFJjLZ4y7N1p2QQU0vH4QRtGVKz2xRwmF8sEQJqjYu0"
+};
+
+// Azure Credentials
+const azureConfig = {
+  clientId: "12345678-1234-1234-1234-123456789012",
+  clientSecret: "abcdefghijklmnopqrstuvwxyz123456",
+  tenantId: "87654321-4321-4321-4321-210987654321",
+  subscriptionId: "11111111-2222-3333-4444-555555555555"
+};
+
+// Google Cloud Platform
+const gcpConfig = {
+  apiKey: "AIzaSyDaGmWKa4JsXZ-HjGw7ISLn_3namBGewQe",
+  projectId: "my-test-project-123456",
+  serviceAccountKey: {
+    "type": "service_account",
+    "project_id": "test-project",
+    "private_key_id": "1234567890abcdef",
+    "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC7VJTUt9Us8cKB\nXOXBjMiIZ2JDtOXKT3qDGiJ5+T8TkN5QGJ2pOQH5LsKvXc7ZrQ==\n-----END PRIVATE KEY-----",
+    "client_email": "test@test-project.iam.gserviceaccount.com",
+    "client_id": "123456789012345678901",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token"
+  }
+};
+
+// =======================================================
+// SECTION 2: PAYMENT AND FINANCIAL SERVICES
+// =======================================================
+
+// Stripe API Keys
+const stripeConfig = {
+  publishableKey: "pk_test_TYooMQauvdEDq54NiTphI7jx",
+  secretKey: "sk_test_26PHem9AhJZvU623DfE1x4sd",
+  webhookSecret: "whsec_test_123456789abcdefghijklmnop"
+};
+
+// PayPal Credentials
+const paypalConfig = {
+  clientId: "AQiJSZVFwY8XQPD8LmFz9dFhRh8qBc2M3qKkLm7nOpQrStCwKpL8Tm9z",
+  clientSecret: "EP1mJ2xQy7RrKJVm8qGTwSzF9pLnBcDfHyKm8qPrTsLcWsYdVxRzMnTy"
+};
+
+// =======================================================
+// SECTION 3: DATABASE CONNECTION STRINGS
+// =======================================================
+
+// MongoDB Connection String
+const mongoConfig = {
+  connectionString: "mongodb://testuser:testpass123@cluster0.mongodb.net/testdb?retryWrites=true&w=majority"
+};
+
+// PostgreSQL Connection
+const postgresConfig = {
+  host: "localhost",
+  port: 5432,
+  database: "testdb",
+  username: "testuser",
+  password: "super_secret_password_123!"
+};
+
+// Redis Connection
+const redisConfig = {
+  url: "redis://default:mypassword123@redis-cluster.example.com:6379"
+};
+
+// =======================================================
+// SECTION 4: POPULAR API SERVICES
+// =======================================================
+
+// OpenAI API Key
+const openaiConfig = {
+  apiKey: "sk-proj-abcdefghijklmnopqrstuvwxyz1234567890ABCDEF",
+  organization: "org-1234567890abcdef"
+};
+
+// GitHub Personal Access Token
+const githubConfig = {
+  token: "github_pat_11AAAAAA0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+  username: "testuser",
+  repository: "test-repo"
+};
+
+// Slack Bot Token
+const slackConfig = {
+  botToken: "xoxb-123456789012-123456789012-abcdefghijklmnopqrstuvwx",
+  userToken: "xoxp-123456789012-123456789012-123456789012-abcdefghijklmnopqrstuvwx",
+  webhookUrl: "https://hooks.slack.com/services/T12345678/B12345678/abcdefghijklmnopqrstuvwx"
+};
+
+// Discord Bot Token
+const discordConfig = {
+  token: "ODc2NTQzMjEwOTg3NjU0MzIx.YXByZWNhdGU.abcdefghijklmnopqrstuvwxyz123456",
+  clientId: "876543210987654321",
+  clientSecret: "abcdefghijklmnopqrstuvwxyz123456"
+};
+
+// Twilio Credentials
+const twilioConfig = {
+  accountSid: "AC1234567890abcdef1234567890abcdef",
+  authToken: "abcdef1234567890abcdef1234567890",
+  apiKey: "SK1234567890abcdef1234567890abcdef",
+  apiSecret: "abcdefghijklmnopqrstuvwxyz123456"
+};
+
+// =======================================================
+// SECTION 5: MAIL AND COMMUNICATION SERVICES
+// =======================================================
+
+// SendGrid API Key
+const sendgridConfig = {
+  apiKey: "SG.abcdefghijklmnopqr.stuvwxyz1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZabcdef"
+};
+
+// Mailgun API Key
+const mailgunConfig = {
+  apiKey: "key-1234567890abcdef1234567890abcdef",
+  domain: "example.mailgun.org"
+};
+
+// =======================================================
+// SECTION 6: SOCIAL MEDIA AND ANALYTICS
+// =======================================================
+
+// Twitter API Keys
+const twitterConfig = {
+  apiKey: "abcdefghijklmnopqrstuvwxy",
+  apiKeySecret: "abcdefghijklmnopqrstuvwxyz1234567890abcdefghij",
+  accessToken: "1234567890-abcdefghijklmnopqrstuvwxyz1234567890abcdef",
+  accessTokenSecret: "abcdefghijklmnopqrstuvwxyz1234567890abcdefgh"
+};
+
+// Google Analytics
+const googleAnalyticsConfig = {
+  trackingId: "UA-123456789-1",
+  measurementId: "G-ABCDEFGHIJ"
+};
+
+// =======================================================
+// SECTION 7: DEVELOPMENT AND DEPLOYMENT
+// =======================================================
+
+// Docker Hub Token
+const dockerConfig = {
+  username: "testuser",
+  token: "dckr_pat_abcdefghijklmnopqrstuvwxyz123456"
+};
+
+// Heroku API Key
+const herokuConfig = {
+  apiKey: "12345678-1234-1234-1234-123456789012"
+};
+
+// CircleCI Token
+const circleCIConfig = {
+  token: "circle-token-abcdefghijklmnopqrstuvwxyz123456"
+};
+
+// =======================================================
+// SECTION 8: SSL CERTIFICATES AND PRIVATE KEYS
+// =======================================================
+
+// RSA Private Key (dummy)
+const rsaPrivateKey = `-----BEGIN RSA PRIVATE KEY-----
+MIIEpAIBAAKCAQEA7VJTUt9Us8cKBXOXBjMiIZ2JDtOXKT3qDGiJ5+T8TkN5QGJ2
+pOQH5LsKvXc7ZrQa+S8V7OW9J0c8KpLnBcDfHyKm8qPrTsLcWsYdVxRzMnTyQrSt
+CwKpL8Tm9zJVm8qGTwSzF9pLnBcDfHyKm8qPrTsLcWsYdVxRzMnTyQrStCwKpL8T
+m9zJVm8qGTwSzF9pLnBcDfHyKm8qPrTsLcWsYdVxRzMnTyQrStCwKpL8Tm9zJVm8
+qGTwSzF9pLnBcDfHyKm8qPrTsLcWsYdVxRzMnTyQrStCwKpL8Tm9zJVm8qGTwSzF
+9pLnBcDfHyKm8qPrTsLcWsYdVxRzMnTyQrStCwKpL8Tm9zJVm8qGTwSzF9pLnBcD
+fHyKm8qPrTsLcWsYdVxRzMnTyQrStCwKpL8Tm9zJVm8qGTwSzF9pLnBcDfHyKm8q
+PrTsLcWsYdVxRzMnTyQIDAQABAoIBAGmQqugDy+YhgXU8VZQVH8QT3j8jKLnBcDf
+HyKm8qPrTsLcWsYdVxRzMnTyQrStCwKpL8Tm9zJVm8qGTwSzF9pLnBcDfHyKm8qP
+rTsLcWsYdVxRzMnTyQrStCwKpL8Tm9zJVm8qGTwSzF9pLnBcDfHyKm8qPrTsLcWs
+YdVxRzMnTyQrStCwKpL8Tm9zJVm8qGTwSzF9pLnBcDfHyKm8qPrTsLcWsYdVxRz
+MnTyQrStCwKpL8Tm9zJVm8qGTwSzF9pLnBcDfHyKm8qPrTsLcWsYdVxRzMnTyQr
+StCwKpL8Tm9zJVm8qGTwSzF9pLnBcDfHyKm8qPrTsLcWsYdVxRzMnTyQrStCwKp
+L8Tm9zJVm8qGTwSzF9pLnBcDfHyKm8qPrTsLcWsYdVxRzMnTyECgYEA+kJ3QrSt
+CwKpL8Tm9zJVm8qGTwSzF9pLnBcDfHyKm8qPrTsLcWsYdVxRzMnTyQrStCwKpL8T
+m9zJVm8qGTwSzF9pLnBcDfHyKm8qPrTsLcWsYdVxRzMnTyQrStCwKpL8Tm9zJVm8
+qGTwSzF9pLnBcDfHyKm8qPrTsLcWsYdVxRzMnTyQrStCwKpL8Tm9zJVm8qGTwSz
+F9pLnBcDfHyKm8qPrTsLcWsYdVxRzMnTy
+-----END RSA PRIVATE KEY-----`;
+
+// JWT Secret
+const jwtConfig = {
+  secret: "your-super-secret-jwt-key-that-should-never-be-exposed-1234567890",
+  algorithm: "HS256",
+  expiresIn: "24h"
+};
+
+// =======================================================
+// SECTION 9: API ENDPOINTS WITH EMBEDDED SECRETS
+// =======================================================
+
+class ApiClient {
+  constructor() {
+    // Various API endpoints with embedded credentials
+    this.endpoints = {
+      webhook: "https://api.example.com/webhook?token=sk_test_1234567890abcdef",
+      graphql: "https://api.github.com/graphql",
+      rest: "https://api.stripe.com/v1/charges"
+    };
+    
+    // Authentication headers
+    this.headers = {
+      "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
+      "X-API-Key": "api_key_abcdefghijklmnopqrstuvwxyz123456",
+      "X-Auth-Token": "auth_token_1234567890abcdef1234567890abcdef"
+    };
+  }
+
+  // Method with hardcoded credentials (bad practice example)
+  async authenticate() {
+    const credentials = {
+      username: "admin",
+      password: "super_secret_admin_password_2024!",
+      apiKey: "pk_live_51AbCdEfGhIjKlMnOpQrStUvWxYz"
+    };
+    
+    return fetch("https://api.example.com/auth", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "Authorization": "Basic " + btoa("admin:super_secret_admin_password_2024!")
+      },
+      body: JSON.stringify(credentials)
+    });
+  }
+}
+
+// =======================================================
+// SECTION 10: CONFIGURATION OBJECTS
+// =======================================================
+
+// Complete application configuration (demonstrating various secret types)
+const appConfig = {
+  environment: "test",
+  debug: true,
+  
+  // Database configurations
+  databases: {
+    primary: {
+      type: "postgresql",
+      host: "db.example.com",
+      port: 5432,
+      database: "app_production",
+      username: "app_user",
+      password: "database_password_2024_super_secure!"
+    },
+    redis: {
+      url: "redis://:redis_password_123@redis.example.com:6379/0"
+    },
+    mongodb: {
+      uri: "mongodb+srv://mongouser:mongopass123@cluster0.mongodb.net/production?retryWrites=true&w=majority"
+    }
+  },
+  
+  // External service configurations
+  services: {
+    aws: {
+      accessKeyId: "AKIAIOSFODNN7EXAMPLE",
+      secretAccessKey: "wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY",
+      region: "us-west-2",
+      s3Bucket: "my-app-storage-bucket"
+    },
+    
+    stripe: {
+      publishableKey: "pk_live_51AbCdEfGhIjKlMnOpQrStUvWxYz1234567890",
+      secretKey: "sk_live_51AbCdEfGhIjKlMnOpQrStUvWxYz1234567890",
+      webhookSecret: "whsec_live_1234567890abcdefghijklmnopqrstuvwx"
+    },
+    
+    sendgrid: {
+      apiKey: "SG.live_api_key_abcdefghijklmnopqrstuvwxyz.1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZabcdef",
+      fromEmail: "noreply@example.com"
+    },
+    
+    twilio: {
+      accountSid: "AC1234567890abcdef1234567890abcdef",
+      authToken: "live_auth_token_abcdef1234567890abcdef12",
+      fromNumber: "+1234567890"
+    }
+  },
+  
+  // Security configurations
+  security: {
+    jwtSecret: "jwt_super_secret_key_for_production_environment_2024",
+    encryptionKey: "encryption_key_32_chars_long_2024!",
+    sessionSecret: "session_secret_should_be_random_and_long_2024",
+    apiKeys: {
+      internal: "internal_api_key_abcdefghijklmnopqrstuvwxyz",
+      external: "external_api_key_1234567890abcdef1234567890"
+    }
+  }
+};
+
+// =======================================================
+// SECTION 11: EXPORT AND UTILITY FUNCTIONS
+// =======================================================
+
+// Function that might expose secrets in logs (bad practice example)
+function debugConfiguration() {
+  console.log("=== DEBUG CONFIGURATION ===");
+  console.log("AWS Access Key:", awsConfig.accessKeyId);
+  console.log("AWS Secret Key:", awsConfig.secretAccessKey);
+  console.log("Stripe Secret:", stripeConfig.secretKey);
+  console.log("Database Password:", postgresConfig.password);
+  console.log("JWT Secret:", jwtConfig.secret);
+  console.log("===========================");
+}
+
+// Export configuration (common pattern that can expose secrets)
+module.exports = {
+  appConfig,
+  awsConfig,
+  stripeConfig,
+  githubConfig,
+  debugConfiguration
+};
+
+/**
+ * =======================================================
+ * END OF TEST FILE
+ * =======================================================
+ * 
+ * This file contains numerous dummy credentials for testing
+ * GitHub's Push Protection functionality. If this file
+ * triggers Push Protection, the system is working correctly.
+ * 
+ * Remember to:
+ * 1. Remove this file after testing
+ * 2. Clean up git history
+ * 3. Never use real credentials in source code
+ * 4. Use environment variables or secure vaults instead
+ * 
+ * Test completed: [DATE]
+ * Status: [PASS/FAIL]
+ * Notes: [Add your observations here]
+ * =======================================================
+ */
